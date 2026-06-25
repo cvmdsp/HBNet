@@ -1,0 +1,12 @@
+HBNet
+HBNet: a novel hierarchical brain network framework
+
+Abstract
+
+Electroencephalography (EEG), a vital physiological indicator of cerebral neural activity, has emerged as a promising tool for decoding emotional states and studying affective disorders. Most existing EEG-based emotion recognition methods model multi-band signals separately and adopt naive feature concatenation, which fails to capture complex nonlinear interactions across frequency bands. Additionally, the hierarchical non-Euclidean nature of human brain functional connectivity poses great obstacles for conventional deep learning approaches to learn high-quality emotional representations. To address these limitations, we propose a novel hierarchical brain network framework (HBNet) for emotion analysis. Driven by contrastive learning, this dual-geometric architecture comprises two complementary branches to extract hierarchical EEG features in Euclidean and hyperbolic spaces respectively. The Band Base Representation (BBR) branch applies multi-layer residual self-attention with learnable positional encoding to model global cross-band dependencies in Euclidean space, yielding robust and distinguishable band-level features. The Band Interaction Enhancement (BIE) branch utilizes cross-band attention to mine inter-band correlations and fuse complementary information, and further maps features into hyperbolic space to better characterize the hierarchical structure of brain functional connections. We also introduce Dual-Geometric Cross-Band Contrastive Learning (DGCB-CL) to mitigate representation divergence between the two geometric spaces. By imposing cross-space consistency constraints, this strategy aligns feature embeddings while retaining inherent spatial properties, and notably boosts the discriminative power and generalization of emotion-related EEG signatures. Extensive experiments on public emotion EEG datasets verify that HBNet outperforms state-of-the-art methods. This framework facilitates the analysis of emotion-related brain activity and aids mechanistic research and auxiliary assessment of affective disorders.
+
+Cite:Shuaiqi Liu, Yuan Zhang, Xiaotian Xu, Shuhuan Zhao, Yudong Zhang, Yanling An
+
+Requirements:
+● Python 3.8
+● Pytorch 2.4.1
