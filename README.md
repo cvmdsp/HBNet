@@ -1,4 +1,3 @@
-HBNet
 HBNet: a novel hierarchical brain network framework
 
 Abstract
